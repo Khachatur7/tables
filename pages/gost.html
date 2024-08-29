@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>ГОСТ</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <ul class="table_navigation_bar">
+          <li><a href="../pages/classification.html">Классификации</a></li>
+          <li><a href="../pages/organization.html">Организации</a></li>
+          <li><a href="../pages/gost.html">ГОСТ</a></li>
+        </ul>
+
+        <div class="table_container">
+          <div class="gost_filter_menu">
+            <div class="gost_filter_by_name sort_item">
+              <div class="drop_down_menu closed_drop_down_menu by_name gost_n">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <span>Наименование</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="gost_filter_by_step sort_item">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu by_step"
+              >
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <span>Этап разработки</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="gost_filter_by_state sort_item">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu by_state"
+              >
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <span>Статус</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="gost_filter_by_category sort_item">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu by_category"
+              >
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <span>Вид</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="gost_filter_by_docum sort_item">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu by_docum"
+              >
+              <div class="drop_down_menu_list">
+                <div class="drop_down_menu_item"><span>Все</span></div>
+                <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+              </div>
+              <div class="resize">
+                <div class="resize_icon"></div>
+              </div>
+              </div>
+              <span>Документы</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="gost_filter_by_tk sort_item">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu by_tk"
+              >
+              <div class="drop_down_menu_list">
+                <div class="drop_down_menu_item"><span>Все</span></div>
+                <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+              </div>
+              <div class="resize">
+                <div class="resize_icon"></div>
+              </div>
+              </div>
+              <span>ТК/ПК</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="gost_filter_by_clsfn sort_item">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu by_clsfn"
+              >
+              <div class="drop_down_menu_list">
+                <div class="drop_down_menu_item"><span>Все</span></div>
+                <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+              </div>
+              <div class="resize">
+                <div class="resize_icon"></div>
+              </div>
+              </div>
+              <span>Классифика-ция</span>
+              <div class="filter_icon"></div>
+            </div>
+          </div>
+          <div class="filter_inputs_menu">
+            <div class="gost_filter_input_by_name gost_filter_input">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="gost_filter_input_by_step gost_filter_input">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu"
+              >
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="gost_filter_input_by_state gost_filter_input">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu"
+              >
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="gost_filter_input_by_category gost_filter_input">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu"
+              >
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="gost_filter_input_by_docum gost_filter_input">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu"
+              >
+                <div class="drop_down_menu_item"><span>Равно</span></div>
+                <div class="drop_down_menu_item"><span>Не равно</span></div>
+                <div class="drop_down_menu_item"><span>Меньше чем</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Меньше чем или равно</span>
+                </div>
+                <div class="drop_down_menu_item"><span>Больше чем</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Больше чем или равно</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="gost_filter_input_by_tk gost_filter_input">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu"
+              >
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="gost_filter_input_by_clsfn gost_filter_input">
+              <div
+                class="drop_down_menu closed_drop_down_menu gost_drop_down_menu"
+              >
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+          </div>
+          <div class="table_list"></div>
+        </div>
+        <div class="pagination">
+          <div class="prev_page_arrow">
+            <img src="../images/prev_icon.svg" alt="prev_icon" />
+          </div>
+          <ul class="page_number_list"></ul>
+          <div class="next_page_arrow">
+            <img src="../images/next_icon.svg" alt="next_icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../json/document.js"></script>
+    <script src="../json/gost.js"></script>
+    <script src="../js/gost.js"></script>
+  </body>
+</html>

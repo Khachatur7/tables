@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <title>Таблицы</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <ul class="table_navigation_bar">
+        <li><a href="../pages/classification.html">Классификации</a></li>
+        <li><a href="../pages/organization.html">Организации</a></li>
+        <li><a href="../pages/gost.html">ГОСТ</a></li>
+      </ul>
+
+      <div class="open_close_bttns">
+        <button class="bttn" id="close_all">
+          <span>Закрыть все</span>
+        </button>
+        <button class="bttn" id="open_all">
+          <span>Раскрыть все</span>
+        </button>
+      </div>
+      <div class="table_container">
+        <div class="filter_menu">
+          <div class="empty_sqr"></div>
+          <div class="filter_by_code sort_item sort_item_by_code">
+            <div class="drop_down_menu closed_drop_down_menu by_code">
+              <div class="drop_down_menu_list">
+                <div class="drop_down_menu_item"><span>Все</span></div>
+                <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+              </div>
+              <div class="resize">
+                <div class="resize_icon">
+                 
+                </div>
+              </div>
+            </div>
+            <span>Код</span>
+            <div class="filter_icon"></div>
+          </div>
+          <div class="filter_by_name sort_item sort_item_by_name">
+            <div class="drop_down_menu closed_drop_down_menu by_name">
+              <div class="drop_down_menu_list">
+                <div class="drop_down_menu_item"><span>Все</span></div>
+                <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+              </div>
+              <div class="resize">
+                <div class="resize_icon">
+                 
+                </div>
+              </div>
+
+            </div>
+            <span>Наименование</span>
+            <div class="filter_icon"></div>
+          </div>
+        </div>
+        
+        <!-- Сама таблица куда добавляются списки
+           НАЧАЛО -->
+        <div class="table_list"></div>
+        <!-- КОНЕЦ -->
+      </div>
+    </div>
+    <script src="../json/classification.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style.css" />
+  <title>Организации</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <ul class="table_navigation_bar">
+        <li><a href="../pages/classification.html">Классификации</a></li>
+        <li><a href="../pages/organization.html">Организации</a></li>
+        <li><a href="../pages/gost.html">ГОСТ</a></li>
+      </ul> 
+
+      <div class="open_close_bttns">
+        <button class="bttn" id="close_all">
+          <span>Закрыть все</span>
+        </button>
+        <button class="bttn" id="open_all">
+          <span>Раскрыть все</span>
+        </button>
+      </div>
+      <div class="table_container">
+        <!-- Сама таблица куда добавляются списки
+             НАЧАЛО -->
+        <div class="table_list"></div>
+        <!-- КОНЕЦ -->
+      </div>
+    </div>
+<script src="../json/org.js"></script>
+    <script src="../js/org.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Документы</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <ul class="table_navigation_bar">
+          <li><a href="../pages/classification.html">Классификации</a></li>
+          <li><a href="../pages/organization.html">Организации</a></li>
+          <li><a href="../pages/gost.html">ГОСТ</a></li>
+        </ul>
+        <div class="table_container">
+          <div class="filter_menu">
+            <div class="doc_filter_by_name sort_item ">
+              <div class="drop_down_menu closed_drop_down_menu by_name">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <span>Наименование документа</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="doc_filter_by_state sort_item ">
+              <div
+                class="drop_down_menu closed_drop_down_menu doc_drop_down_menu by_state"
+              >
+              <div class="drop_down_menu_list">
+                <div class="drop_down_menu_item"><span>Все</span></div>
+                <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+              </div>
+              <div class="resize">
+                <div class="resize_icon"></div>
+              </div>
+              </div>
+              <span>Статус</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="doc_filter_by_file sort_item ">
+              <div
+                class="drop_down_menu closed_drop_down_menu doc_drop_down_menu by_file"
+              >
+              <div class="drop_down_menu_list">
+                <div class="drop_down_menu_item"><span>Все</span></div>
+                <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+              </div>
+              <div class="resize">
+                <div class="resize_icon"></div>
+              </div>
+              </div>
+              <span>Файл</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div class="doc_filter_by_action sort_item ">
+              <div class="drop_down_menu closed_drop_down_menu by_action">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <span>Действия</span>
+              <div class="filter_icon"></div>
+            </div>
+          </div>
+          <div class="filter_inputs_menu">
+            <div class="docs_filter_input_by_name docs_filter_input">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="docs_filter_input_by_state docs_filter_input">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="docs_filter_input_by_file docs_filter_input">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="docs_filter_input_by_action docs_filter_input">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+          </div>
+          <div class="table_list"></div>
+        </div>
+        <div class="pagination">
+          <div class="prev_page_arrow">
+            <img src="../images/prev_icon.svg" alt="prev_icon" />
+          </div>
+          <ul class="page_number_list"></ul>
+          <div class="next_page_arrow">
+            <img src="../images/next_icon.svg" alt="next_icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../json/document.js"></script>
+  <script src="../js/documents.js"></script>
+</html>

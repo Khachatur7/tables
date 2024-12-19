@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>ГОСТ</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <ul class="table_navigation_bar">
+          <li><a href="../pages/classification.html">Классификации</a></li>
+          <li><a href="../pages/gost.html">ГОСТ</a></li>
+          <li>
+            <a href="../pages/organizationList.html">Список организаций</a>
+          </li>
+          <li><a href="../pages/organization.html">Организации</a></li>
+          <li><a href="../pages/usersList.html">Список пользователей</a></li>
+          <li><a href="../pages/users.html">Пользователи</a></li>
+        </ul>
+        <div class="open_close_bttns">
+          <button class="bttn" id="add">
+            <a
+              href="http://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Добавить</a
+            >
+          </button>
+          <button class="bttn" id="delete">
+            <span>Удалить</span>
+          </button>
+        </div>
+        <div class="table_container">
+          <div class="users_header">
+            <div class="checkbox_sqr">
+              <input type="checkbox" name="" id="main_checkbox_sqr" />
+            </div>
+            <div class="empty_sqr"></div>
+            <div
+              class="users_header_item table_header_item by_status sort_item"
+            >
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <span>Статус</span>
+              <div class="filter_icon"></div>
+            </div>
+            <div
+              class="users_header_item table_header_item by_full_name sort_item"
+            >
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <div class="filter_icon"></div>
+              <span>Ф.И.О.</span>
+            </div>
+            <div class="users_header_item table_header_item by_email sort_item">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <div class="filter_icon"></div>
+              <span>email</span>
+            </div>
+            <div class="users_header_item table_header_item by_post sort_item">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <div class="filter_icon"></div>
+              <span>Должность</span>
+            </div>
+            <div
+              class="users_header_item table_header_item by_organization sort_item"
+            >
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <div class="filter_icon"></div>
+              <span>Организа-ция</span>
+            </div>
+            <div
+              class="users_header_item table_header_item by_phone_number sort_item"
+            >
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <div class="filter_icon"></div>
+              <span>Телефон</span>
+            </div>
+            <div
+              class="users_header_item table_header_item by_last_login sort_item"
+            >
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <div class="filter_icon"></div>
+              <span>Последний вход</span>
+            </div>
+            <div
+              class="users_header_item table_header_item by_last_activity without_border_r sort_item"
+            >
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_list">
+                  <div class="drop_down_menu_item"><span>Все</span></div>
+                  <div class="drop_down_menu_item"><span>(Пусто)</span></div>
+                  <div class="drop_down_menu_item"><span>(Не пусто)</span></div>
+                </div>
+                <div class="resize">
+                  <div class="resize_icon"></div>
+                </div>
+              </div>
+              <div class="filter_icon"></div>
+              <span>Последняя активность</span>
+            </div>
+          </div>
+          <div class="user_header_inputs">
+            <div class="checkbox_sqr"></div>
+            <div class="empty_sqr"></div>
+            <div class="users_header_inputs_item"></div>
+            <div class="users_header_inputs_item input_by_full_name">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="users_header_inputs_item input_by_email">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="users_header_inputs_item input_by_post">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="users_header_inputs_item input_by_organization">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="users_header_inputs_item input_by_phone_number">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="users_header_inputs_item input_by_last_login">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+            <div class="users_header_inputs_item without_border_r input_by_last_activity">
+              <div class="drop_down_menu closed_drop_down_menu">
+                <div class="drop_down_menu_item"><span>Начинается с</span></div>
+                <div class="drop_down_menu_item"><span>Содержит</span></div>
+                <div class="drop_down_menu_item"><span>Не содержит</span></div>
+                <div class="drop_down_menu_item">
+                  <span>Заканчивается на</span>
+                </div>
+              </div>
+              <div class="filter_input">
+                <input type="text" />
+                <div class="delete_text_bttn"></div>
+              </div>
+              <div class="input_filter_icon"></div>
+            </div>
+          </div>
+          <div class="table_list"></div>
+        </div>
+        <div class="pagination">
+          <div class="prev_page_arrow">
+            <img src="../images/prev_icon.svg" alt="prev_icon" />
+          </div>
+          <ul class="page_number_list"></ul>
+          <div class="next_page_arrow">
+            <img src="../images/next_icon.svg" alt="next_icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../json/users.js"></script>
+    <script src="../js/users.js"></script>
+  </body>
+</html>

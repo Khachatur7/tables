@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Таблицы</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <ul class="table_navigation_bar">
+                <li><a href="../pages/classification.html">Классификации</a></li>
+                <li><a href="../pages/gost.html">ГОСТ</a></li>
+                <li>
+                  <a href="../pages/organizationList.html">Список организаций</a>
+                </li>
+                <li><a href="../pages/organization.html">Организации</a></li>
+                <li><a href="../pages/usersList.html">Список пользователей</a></li>
+                <li><a href="../pages/users.html">Пользователи</a></li>
+               
+              </ul>
+
+            <div class="table_container">
+                <div class="userList_header">
+                    <div class="checkbox_sqr">
+                        <input type="checkbox" name="user" id="main_checkbox_sqr">
+                    </div>
+                    <div class="user_column table_header_item sort_item"><span>Пользователь</span></div>
+                    <div class="post_column table_header_item sort_item"><span>Должность</span></div>
+                    <div class="organization_column table_header_item sort_item"><span>Организация</span></div>
+                    <div class="email_column table_header_item sort_item"><span>email</span></div>
+                </div>
+                <!-- Сама таблица куда добавляются списки
+           НАЧАЛО -->
+                <div class="table_list">
+                    
+                </div>
+                <!-- КОНЕЦ -->
+            </div>
+            <div class="pagination">
+                <div class="prev_page_arrow">
+                  <img src="../images/prev_icon.svg" alt="prev_icon" />
+                </div>
+                <ul class="page_number_list"></ul>
+                <div class="next_page_arrow">
+                  <img src="../images/next_icon.svg" alt="next_icon" />
+                </div>
+              </div>
+        </div>
+        <script src="../json/userList.js"></script>
+        <script src="../js/userList.js"></script>
+</body>
+
+</html>
